@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="C:\Users\User\Documents\Web Dev\font\css\all.css">
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa fa-bars"></i>
+        </label>
+        <label for="check" class="cancel">
+            <i class="fa-solid fa-xmark"></i>
+        </label>
+        <label class="logo">W.</label>
+        <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Popular</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Categories</a></li>
+        </ul>
+    </nav>
+    <div class="con1">
+        <div class="semi-con1">
+            <div class="img1">
+                <!-- <img src="c1.jpg" width="95%" height="180vh"> -->
+            </div>
+            <div class="wrd">
+                <h1>The bright <br> future of <br> web3.0? </h1>
+                <div class="wrd1">
+                    <p>We dive into the evolution of the web that <br> claims to put power of the platforms back <br>
+                        into the hands of the people. But is it really <br> fulfilling its promise?</p>
+                    <br>
+                    <button>READ MORE</button>
+                </div>
+            </div>
+        </div>
+        <div class="semi-con2">
+            <h2 style="color: orange;">NEW</h2>
+            <br>
+            <a href="#">Hydrogen VS Electric cars</a>
+            <br><br>
+            <p style="color: whitesmoke;">Will hydrogen-fueled cars ever catch up with EVs</p>
+            <br>
+            <hr>
+            <br>
+            <a href="#">The Downsides of AI Artistry</a>
+            <br><br>
+            <p style="color: whitesmoke;">What are the possible adverse effects of <br> on-demand AI image generation?
+            </p>
+            <br>
+            <hr>
+            <br>
+            <a href="#">Is VC funding Drying Up?</a>
+            <br><br>
+            <p style="color: whitesmoke;">Private funding by VC is down by 50% <br> YOY. We take a look at what that
+                means.
+            </p>
+        </div>
+    </div>
+    <br>
+    <div class="con2">
+        <div class="subcon1">
+            <div class="img2"></div>
+            <div class="wrd3">
+                <h5>01</h5>
+                <br>
+                <a href="#">Reviving Retro PCs</a>
+                <br>
+                <p>What happens when old PCs <br> are given modern upgrades?</p>
+            </div>
+        </div>
+        <div class="subcon2">
+            <div class="img3"></div>
+            <div class="wrd4">
+                <h6>02</h6>
+                <br>
+                <a href="#">Top 10 Laptops of 2022</a>
+                <br>
+                <p>Our best picks for various <br> needs and budgets.</p>
+            </div>
+        </div>
+        <div class="subcon3">
+            <div class="img4"></div>
+            <div class="wrd5">
+                <h7>03</h7>
+                <br>
+                <a href="#">The Growth of Gaming</a>
+                <br>
+                <p>How the pandemic has sparked <br> fresh opportunities.</p>
+            </div>
+        </div>
+    </div>
+</body>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        list-style: none;
+        box-sizing: border-box;
+    }
+
+    nav {
+        height: 100px;
+        width: 100%;
+    }
+
+    .logo {
+        color: black;
+        font-size: 35px;
+        line-height: 80px;
+        padding: 0 100px;
+        font-weight: bold;
+    }
+
+    nav ul {
+        float: right;
+        margin-right: 9%;
+    }
+
+    nav ul li {
+        display: inline;
+        line-height: 80px;
+        margin: 0 5px;
+    }
+
+    nav ul li a {
+        color: black;
+    }
+
+    nav ul li a:hover {
+        color: rgba(255, 166, 0, 0.758);
+    }
+
+    .checkbtn,.cancel {
+        font-size: 30px;
+        color: black;
+        float: right;
+        line-height: 80px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+    }
+
+
+    .wrk1 {
+        width: 20%;
+        height: 10px;
+    }
+
+    #check {
+        display: none
+    }
+
+    .wrd {
+        display: flex;
+        flex-direction: row;
+        padding-top: 2%;
+    }
+
+    .wrd h1 {
+        padding-right: 5%;
+        font-size: 45px;
+    }
+
+    .wrd p {
+        font-size: 20px;
+    }
+
+    .con1 {
+        padding-left: 8%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .wrd1 button {
+        height: 5vh;
+        width: 100px;
+        color: white;
+        background-color: orangered;
+    }
+
+    .wrd1 button:hover {
+        background-color: black
+    }
+
+    .wrd1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wrd1 p {
+        font-size: 23px;
+    }
+
+    .semi-con1 {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        height: 60vh;
+    }
+
+    .img1{
+        background-image: url(c1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 95%;
+        height: 35vh;
+    }
+    .semi-con2 {
+        background-color: rgb(11, 12, 26);
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 30%;
+        height: 55vh;
+    }
+
+    .semi-con2 a {
+        font-size: 20px;
+        color: white;
+    }
+
+    .semi-con2 a:hover {
+        color: orange;
+    }
+
+    .con2 {
+        padding-left: 8%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding-right: 3%;
+    }
+
+    .wrd3 {
+        display: flex;
+        flex-direction: column;
+        padding-left: 5%;
+    }
+
+    .wrd3 h5 {
+        font-size: 30px;
+        color: rgb(180, 174, 174);
+    }
+
+    .wrd3 a {
+        font-size: 15px;
+    }
+
+    .wrd3 a:hover {
+        color: rgb(205, 104, 67);
+    }
+
+    .wrd4 {
+        display: flex;
+        flex-direction: column;
+        padding-left: 5%;
+    }
+
+    .wrd4 h6 {
+        color: rgb(180, 174, 174);
+        font-size: 30px;
+    }
+
+    .wrd4 a {
+        font-size: 15px;
+    }
+
+    .wrd4 a:hover {
+        color: rgb(205, 104, 67);
+    }
+
+    .wrd5 {
+        display: flex;
+        flex-direction: column;
+        padding-left: 5%;
+    }
+
+    .wrd5 h7 {
+        color: rgb(180, 174, 174);
+        font-size: 30px;
+    }
+
+    .wrd5 a {
+        font-size: 15px;
+    }
+
+    .wrd5 a:hover {
+        color: rgb(205, 104, 67);
+    }
+
+    .subcon1 {
+        width: 33.3%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .img2 {
+        background-image: url(c4.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 20%;
+        height: 20vh;
+    }
+
+    .subcon2 {
+        width: 33.3%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .img3 {
+        background-image: url(c5.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 20%;
+        height: 20vh;
+    }
+
+    .subcon3 {
+        width: 33.3%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .img4 {
+        background-image: url(c3.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 20%;
+        height: 20vh;
+    }
+
+    @media screen and (max-width:858px) {
+        .checkbtn {
+            display: block;
+        }
+
+
+        ul {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: white;
+            top: 80px;
+            left: -100%;
+            text-align: center;
+            transition: all .5s;
+        }
+
+        nav ul li {
+            display: block;
+            margin: 50px 0;
+            line-height: 30px;
+        }
+
+        nav ul li a {
+            font-size: 20px;
+        }
+
+        a:hover,a.active {
+            color: white;
+        }
+
+        #check:checked~ul {
+            left: 0;
+        }
+
+        #check:checked~ .checkbtn{
+            display: none;
+        }
+
+        #check:checked~ .cancel{
+            display: block;
+        }
+
+
+        .logo {
+            padding: 0 30px;
+        }
+
+        .con1 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .semi-con1{
+            width: 100%;
+            height: 80vh;
+        }
+
+        .img1{
+            width: 90%;
+        }
+
+        .wrd1{
+            width: 80%;
+        }
+
+        .wrd {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .semi-con2 {
+            width: 90%;
+            height: 50vh;
+        }
+
+        .con2 {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100vh;
+            line-height: 20px;
+        }
+
+        .subcon1 {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .img2 {
+            width: 44%;
+        }
+
+        .subcon2 {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            padding-top: 25px;
+        }
+
+        .img3 {
+            width: 43%;
+        }
+
+        .subcon3 {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            padding-top: 25px;
+        }
+
+        .img4 {
+            width: 48%;
+        }
+
+        .wrd1 {
+            padding-bottom: 25px;
+        }
+
+        .wrd3 a:hover {
+            color: rgb(205, 104, 67);
+        }
+        .wrd1 button:hover {
+        background-color: black
+    }
+    }
+
+    @media screen and (max-width:485px) {
+        .checkbtn {
+            display: block;
+        }
+
+
+        ul {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: white;
+            top: 80px;
+            left: -100%;
+            text-align: center;
+            transition: all .5s;
+        }
+
+        nav ul li {
+            display: block;
+            margin: 50px 0;
+            line-height: 30px;
+        }
+
+        nav ul li a {
+            font-size: 20px;
+        }
+
+        a:hover,a.active {
+            color: white;
+        }
+
+        #check:checked~ul {
+            left: 0;
+        }
+
+        #check:checked~ .checkbtn{
+            display: none;
+        }
+
+        #check:checked~ .cancel{
+            display: block;
+        }
+
+
+        .logo {
+            padding: 0 30px;
+        }
+
+        .con1 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .semi-con1{
+            width: 100%;
+            height: 80vh;
+        }
+
+        .img1{
+            width: 90%;
+        }
+
+        .wrd1{
+            width: 80%;
+        }
+
+        .wrd {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .semi-con2 {
+            width: 90%;
+            height: 50vh;
+        }
+
+        .con2 {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100vh;
+            line-height: 20px;
+        }
+
+        .subcon1 {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .img2 {
+            width: 44%;
+        }
+
+        .subcon2 {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            padding-top: 25px;
+        }
+
+        .img3 {
+            width: 43%;
+        }
+
+        .subcon3 {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            padding-top: 25px;
+        }
+
+        .img4 {
+            width: 48%;
+        }
+
+        .wrd1 {
+            padding-bottom: 25px;
+        }
+
+        .wrd3 a:hover {
+            color: rgb(205, 104, 67);
+        }
+        .wrd1 button:hover {
+        background-color: black
+    }
+    }
+</style>
+
+</html>
